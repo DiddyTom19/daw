@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Zozor</title>
+    <style>
+        @font-face {
+    font-family: ballpark;
+    src: url('../materiales/polices/ballpark.eot');
+    src: url('../materiales/polices/ballpark.svg') format('svg');
+    src: url('../materiales/polices/ballpark.woff') format('woff'),
+        url('../materiales/polices/ballpark.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: dayrom;
+    src: url('../materiales/polices/dayrom.eot'),
+        url('../materiales/polices/dayrom.svg') format('svg'),
+        url('../materiales/polices/dayrom.woff') format('woff'),
+        url('../materiales/polices/dayrom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #181818;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-image: url(../materiales/images/fond_jaune.png);
+}
+
+#main_wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h3, nav a{
+    font-family: dayrom;
+    font-weight: normal;
+    font-size: normal;
+    text-transform: uppercase;
+}
+
+header {
+    background: url(../materiales/images/separateur.png) repeat-x bottom;  /*   Repetir imagen en un solo lado  */
+}
+
+#logo {
+    display: inline-block;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#logo figure {
+    display: inline-block;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'ballpark', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo_zozor, header h1 {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+header h2 {
+    font-family: dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/*  Enlaces de navegación   */
+
+nav {
+    display: inline-block;  /*Permite establecer un ancho los margenes se respetan   */
+    width: 740px;       /*  Indico el espacio que va a ocupar   */
+    text-align: right;  /*   Alinio todo ese campo a la izquierda   */
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/**     FIN SECCIÓN DE NAVEGACIÓN   **/
+
+
+/** INICIO SECCIÓN DEL BANNER **/
+
+#banner-image {
+    margin-top: 20px;
+    height: 200px;
+    background-image: url('../materiales/images/sanfrancisco.jpg');
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;  /**   Sirve para realizar una sombra negra    **/
+    position: relative;
+    margin-top: 40px;
+}
+
+#banner-description {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(24, 24, 24, .8);
+    width: 99.5%;
+    height: 33px;
+    padding-left: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.red_buttom {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #760001;
+    color: #fff;
+    text-align: center;
+}
+
+/**     Cuerpo de la pagina o SECTION      **/
+
+section {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article {
+    max-width: 70%;
+    margin-right: 20px;
+}
+
+.icon-categories {
+    margin-right: 10px;
+}
+
+article p {
+    font-size: .8em;
+}
+
+aside {
+    max-width: 25%;
+    background-color: #706b64;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: .9em;
+    color: #fff;
+    box-shadow: 0px 2px 5px #1c1a19;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#arrow {
+    position: absolute;
+    left: -12px;
+    top: 120px;
+}
+
+#tweet img {
+    height: 40px;
+    width: 40px;
+}
+
+/**     Inicio del footer   **/
+
+footer {
+    background: url('../materiales/images/separateur.png') repeat-x,
+    url('../materiales/images/ico_top.png') no-repeat top center;
+    /** Aqui es un ejemplo de insertar varias imagenes como background
+    indicar cuantas veces quiero que se repita y cuantas donde lo quiero posicionar
+    como lo es el ejemplo de "top center"**/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
+
+footer p, footer ul {
+    font-size: .8em;
+}
+
+#footer-tweet {
+    width: 28%;
+}
+
+#my_pictures {
+    width: 35%;
+}
+
+#my_pictures img {
+    border: 1px solid #000;
+}
+
+.container-my_friends {
+    width: 30%;
+}
+
+#my_friends {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my_friends ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('../materiales/images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+    </style>
+</head>
+<body>
+
+    <div id="main_wrapper"> <!--Inicio de wrapper-->
+        <header>
+            <div id="logo">
+                <figure>
+                    <img src="./materiales/images/zozor_logo.png" alt="Logo_zozor" id="logo_zozor">
+                </figure>
+                    <h1>Zozor</h1>
+                    <h2>Travel diaries</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">RESUME</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="banner-image">
+            <div id="banner-description">
+                <p>Reflections on my holiday in the United States...</p>
+                <a href="#" class="red_buttom">See article <img src="" alt=""></a>
+            </div>
+        </div>
+
+        <section>
+            <article>
+                <h1><img src="./materiales/images/ico_epingle.png" alt="icon-title" class="icon-categories">I'M A GREAT TRAVELLER</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </article>
+            <aside>
+                <h2>ABOUT THE AUTHOR</h2>
+                <figure id="aside-burro">
+                    <img src="./materiales/images/zozor_classe.png" alt="burro">
+                </figure>
+                <img src="./materiales/images/bulle.png" alt="triangulo" id="arrow">
+                <p>Let me introduce myself: My name´s
+                    Zozor. I was born on 23 November
+                    2005. 
+                </br></br>
+                    A bit meager, is it not? This is why
+                    I've now decide to write my
+                    biography to let my readers know
+                    who I really am.
+                </p>
+                <div id="tweet">
+                    <img src="./materiales/images/facebook.png" alt="Facebook">
+                    <img src="./materiales/images/twitter.png" alt="Twitter">
+                    <img src="./materiales/images/vimeo.png" alt="Vime">
+                    <img src="./materiales/images/flickr.png" alt="flickr">
+                    <img src="./materiales/images/rss.png" alt="Blog">
+                </div>
+            </aside>
+        </section>
+
+        <footer>
+            <div id="footer-tweet">
+                <h3>MY LAST NAME</h3>
+                <P>Hee-haw!</P>
+                <P>12/05 23:12</P>
+            </div>
+            <div id="my_pictures">
+                <h3>MY PICTURES</h3>
+                <img src="./materiales/images/photo1.jpg" alt="image">
+                <img src="./materiales/images/photo2.jpg" alt="image">
+                <img src="./materiales/images/photo3.jpg" alt="image">
+                <img src="./materiales/images/photo4.jpg" alt="image">
+            </div>
+            <div class="container-my_friends">
+                <h3>MY FRIENDS</h3>
+                <div id="my_friends">
+                    <ul>
+                        <li>Pupi the rabbit</li>
+                        <li>Mr baobab</li>
+                        <li>Kaiwaii</li>
+                        <li>Perceval.eu</li>
+                    </ul>
+                    <ul>
+                        <li>Ji</li>
+                        <li>Super cucumber</li>
+                        <li>Prince</li>
+                        <li>Mr Fan</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- Fin del contenedor wrapper-->
+
+</body>
+</html>
