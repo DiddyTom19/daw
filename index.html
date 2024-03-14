@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Zozor</title>
+    <style>
+        
+body {
+    margin: 0;
+    padding: 0;
+    color: #181818;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-image: url(https://i.ibb.co/8cKGq3j/fond-jaune.png);
+}
+
+#main_wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h3, nav a{
+    font-family: dayrom;
+    font-weight: normal;
+    font-size: normal;
+    text-transform: uppercase;
+}
+
+header {
+    background: url(https://i.ibb.co/5RJCRPd/separateur.png) repeat-x bottom;  /*   Repetir imagen en un solo lado  */
+}
+
+#logo {
+    margin: 0;
+    margin-top: 0px;
+}
+
+#logo figure {
+    display: inline-block;
+    margin: 0;
+}
+
+header h1 {
+    margin-left: -170px;
+    font-family: 'ballpark', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo_zozor, header h1 {
+    
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 45%;
+    height: auto;
+}
+
+header h2 {
+    margin-left: 60px;
+    font-family: dayrom, serif;
+    font-size: 1.1em;
+    margin-top: -5px;
+    font-weight: normal;
+}
+
+/*  Enlaces de navegación   */
+
+nav {
+    display: inline-block;  /*Permite establecer un ancho los margenes se respetan   */
+    width: 740px;       /*  Indico el espacio que va a ocupar   */
+    text-align: right;  /*   Alinio todo ese campo a la izquierda   */
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/**     FIN SECCIÓN DE NAVEGACIÓN   **/
+
+
+/** INICIO SECCIÓN DEL BANNER **/
+
+#banner-image {
+    margin-top: 20px;
+    height: 200px;
+    background-image: url('https://i.ibb.co/kJfVmzq/pano-camara-roundshot-times-square.jpg');
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;  /**   Sirve para realizar una sombra negra    **/
+    position: relative;
+    margin-top: 40px;
+}
+
+#banner-description {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(24, 24, 24, .8);
+    width: 99.5%;
+    height: 33px;
+    padding-left: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.red_buttom {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #760001;
+    color: #fff;
+    text-align: center;
+}
+
+/**     Cuerpo de la pagina o SECTION      **/
+
+section {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+#aside-yo img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% de su contenedor padre */
+    height: 200%; /* Ajusta la altura automáticamente para mantener la proporción de la imagen */
+  }
+  
+
+article {
+    max-width: 70%;
+    margin-right: 20px;
+}
+
+.icon-categories {
+    margin-right: 10px;
+}
+
+article p {
+    font-size: .8em;
+}
+
+aside {
+    max-width: 25%;
+    background-color: #706b64;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: .9em;
+    color: #fff;
+    box-shadow: 0px 2px 5px #1c1a19;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#arrow {
+    position: absolute;
+    left: -12px;
+    top: 120px;
+}
+
+#tweet img {
+    height: 40px;
+    width: 40px;
+}
+
+/**     Inicio del footer   **/
+
+footer {
+    background: url(https://i.ibb.co/5RJCRPd/separateur.png) repeat-x,
+    url('https://i.ibb.co/JBR4RzD/ico-top.png') no-repeat top center;
+    /** Aqui es un ejemplo de insertar varias imagenes como background
+    indicar cuantas veces quiero que se repita y cuantas donde lo quiero posicionar
+    como lo es el ejemplo de "top center"**/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
+
+footer p, footer ul {
+    font-size: .8em;
+}
+
+#footer-tweet {
+    width: 28%;
+}
+
+#my_pictures {
+    width: 100%;
+    text-align: center;
+}
+
+#my_pictures img {
+    border: 1px solid #000;
+    width: 100px; /* Ajusta el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0px; /* Opcional: añade un margen alrededor de las imágenes */
+    margin-bottom: -20px;
+   
+}
+
+.container-my_friends {
+    width: 30%;
+}
+
+#my_friends {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my_friends ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    width: 48%;
+    list-style-image: url('https://i.ibb.co/vkNCWD1/ico-liensexterne.png');
+    padding-left: 0px;
+    margin-bottom: -10px;
+    
+}
+#my_friends li {
+    margin-top: 10px; /* Espacio superior */
+}
+    </style>
+</head>
+<body>
+
+    <div id="main_wrapper"> <!--Inicio de wrapper-->
+        <header>
+            <div id="logo">
+                <figure>
+                    <img src="https://i.ibb.co/vkL1hsD/DALL-E-2024-02-15-15-42-47-Design-a-logo-for-Viajes-de-Tomass-a-travel-and-tourism-company-The-logo.png" alt="Logo_zozor" id="logo_zozor">
+                </figure>
+                    <h1 text-align: center;>Viajes de Tomass</h1>
+                    <h2>Travel diaries</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">RESUME</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="banner-image">
+            <div id="banner-description">
+                <p>Mis aventuras alrededor del mundo.</p>
+                <a href="#" class="red_buttom">See article <img src="" alt=""></a>
+            </div>
+        </div>
+
+        <section>
+            <article>
+                <h1 style="font-size: 22px;"><img src="https://i.ibb.co/489LBYj/ico-epingle.png" alt="icon-title" class="icon-categories">Descubriendo el Mundo: Mis Aventuras por América Latina, América del Norte y Europa</h1>
+                <p style="font-size: 15px;">Viajar no es solo moverse de un lugar a otro; es abrirse a nuevas experiencias, culturas y perspectivas. Mi pasión por explorar me ha llevado a recorrer no solo los vastos y diversos paisajes de América Latina y América del Norte, sino también las ricas y antiguas tierras de Europa. Cada destino ha sido una página en el diario de mi vida, llena de historias, aprendizajes y recuerdos inolvidables.</p>
+        <p style="font-size: 15px;">En América Latina, me he sumergido en la vibrante vida de países como Argentina, Colombia, Brasil y Panamá. Argentina me cautivó con su tango apasionado y sus asados, mientras que Colombia me envolvió con la calidez de su gente y el aroma de su café. Brasil, con su carnaval y sus playas doradas, fue una fiesta para los sentidos, y Panamá, con su famoso canal y su fusión de culturas, fue un descubrimiento de ingeniería y diversidad.</p>
+        <p style="font-size: 15px;">Cruzando hacia América del Norte, Estados Unidos me ofreció una tapestria de experiencias que van desde la magnificencia natural del Gran Cañón y las montañas rocosas, hasta la efervescencia cultural de ciudades como Nueva York y Los Ángeles. Cada estado es un mundo en sí mismo, con su propia identidad y encanto.</p>
+        <p style="font-size: 15px;">Finalmente, Europa fue como adentrarse en un libro de historia viviente. La majestuosidad de sus antiguos edificios, la profundidad de su historia y la diversidad de sus culturas me enseñaron sobre la resiliencia y belleza del espíritu humano. Desde las románticas calles de París hasta los históricos caminos de Roma, cada ciudad fue un descubrimiento de arte, historia y gastronomía.</p>
+        <p style="font-size: 15px;">Viajar es más que coleccionar fotos o souvenirs; es coleccionar momentos que se convierten en parte de quien eres. Cada país, con sus singularidades, me ha enseñado una lección valiosa sobre la vida, la tolerancia y la belleza de nuestro mundo. A través de mis viajes, he aprendido que, a pesar de nuestras diferencias, compartimos sueños, esperanzas y el deseo de conectar.</p>
+        <p style="font-size: 15px;">En conclusión, viajar me ha permitido explorar no solo el mundo exterior, sino también mi mundo interior. Me ha enseñado a ser más abierto, adaptable y apreciativo de las pequeñas maravillas de la vida. Y aunque todavía me quedan muchos más lugares por descubrir, estoy agradecido por cada experiencia y encuentro que he tenido en mi camino. La aventura continúa, y con ella, el deseo de seguir explorando y aprendiendo de este vasto y maravilloso mundo.</p>
+            </article>
+            <aside>
+                <h2>ACERCA DEL AUTOR</h2>
+                <figure id="aside-yo">
+                    <img src="https://i.ibb.co/37BDFGB/abouth.jpg" alt="yo">
+                </figure>
+                <img src="https://i.ibb.co/xhcMvFJ/bulle.png" alt="triangulo" id="arrow">
+                <p><strong>Permíteme presentarme:</strong> Mi nombre es Tomass. Nací hace 23 años y actualmente resido en la vibrante y soleada isla de Ibiza.</p>
+                <p>Reconozco que esta introducción puede parecer algo escueta. Es por eso que he decidido escribir mi biografía, para permitir a mis lectores descubrir quién soy realmente. En estas páginas, no solo compartiré los momentos que han definido mi vida, sino también las pasiones y experiencias que me han llevado a ser la persona que soy hoy. Desde las costas bañadas por el sol de Ibiza hasta las lecciones aprendidas a lo largo de mis 23 años, este es un viaje a través de mi vida, mis sueños y todo lo que aún espero alcanzar.</p>
+                
+                <div id="tweet">
+                    <img src="https://i.ibb.co/KNM2L5B/facebook.png" alt="Facebook">
+                    <img src="https://i.ibb.co/DGxWtVM/twitter.png" alt="Twitter">
+                    <img src="https://i.ibb.co/2qbKMNS/vimeo.png" alt="Vime">
+                    <img src="https://i.ibb.co/PCc5v3V/flickr.png" alt="flickr">
+                    <img src="https://i.ibb.co/3WGfjV0/rss.png" alt="Blog">
+                </div>
+            </aside>
+        </section>
+
+        <footer>
+            <div id="footer-tweet">
+                <h3>Twitter</h3>
+                <P>HOLA AMIGOS!! QUE ESTAN HACIENDO?</P>
+                <P>12/05 23:12</P>
+            </div>
+            <div id="my_pictures">
+                <h3>MIS FOTOS</h3>
+                <img src="https://i.ibb.co/k2yNSvX/IMG-1535.jpg" alt="image 1">
+                <img src="https://i.ibb.co/xHSDPjz/IMG-2205.jpg" alt="image 2">
+                <img src="https://i.ibb.co/3hPTD9T/IMG-4334.jpg" alt="image 3">
+                <img src="https://i.ibb.co/gmp8YY3/IMG-8126.jpg" alt="image 4">
+            </div>
+            <div class="container-my_friends">
+                <h3>MIS AMIGOS</h3>
+                <div id="my_friends">
+                    <ul>
+                        <li>Cristhopher Lovich</li>
+                        <li>Danielito El travieso</li>
+                        <li>Viajar por el mundo</li>
+                        <li>VIVA ESPAÑA!</li>
+                    </ul>
+                    <ul>
+                        <li>Astronauta</li>
+                        <li>PrinceLove</li>
+                        <li>Mr Bean</li>
+                        <li>Donald Trump</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- Fin del contenedor wrapper-->
+
+</body>
+</html>
